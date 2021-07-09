@@ -1,0 +1,110 @@
+.onboarding4 {
+  ion-slides {
+    height: 100%;
+    padding-bottom: calc(62px + var(--ion-safe-area-bottom));
+  }
+
+  .custom-slide-footer {
+    height: 62px;
+    position: fixed;
+    bottom: calc(0px + var(--ion-safe-area-bottom));
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+
+  .skip-button {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 64px;
+
+    ion-img {
+      //   max-height: 50%;
+      //   max-width: 80%;
+      margin: 0 auto;
+      pointer-events: none;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .slide {
+      h2 {
+        margin-top: 2.8rem;
+        color: #384984;
+      }
+
+      p {
+        padding: 0 40px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #4e5779;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    text-align: left;
+    bottom: calc(20px + var(--ion-safe-area-bottom));
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+  }
+
+  .swiper-pagination-bullet-active {
+    height: 12px !important;
+    width: 12px !important;
+    background: #384984 !important;
+  }
+
+  .swiper-pagination-bullet {
+    height: 8px;
+    width: 8px;
+    background: #a9b2cf;
+  }
+
+  .swiper-container-horizontal
+    > .swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 2px;
+  }
+
+  .circle-button {
+    height: 42px;
+    width: 42px;
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --border-radius: 100% !important;
+    border-radius: 100% !important;
+    box-shadow: 0px 20px 20px 0px rgba(186, 191, 205, 1);
+
+    --color: #384984 !important;
+    --color-focused: #384984 !important;
+    --color-activated: #384984 !important;
+    --color-hover: #384984 !important;
+    color: #384984 !important;
+  }
+
+  .get-started-button {
+    --color: #384984 !important;
+    --color-focused: #384984 !important;
+    --color-activated: #384984 !important;
+    --color-hover: #384984 !important;
+    color: #384984 !important;
+    box-shadow: 0px 20px 20px 0px rgba(186, 191, 205, 1);
+    border-radius: 46px !important;
+
+    font-size: 14px;
+
+    ion-icon {
+      width: 1.6em;
+      height: 1.6em;
+    }
+  }
+}

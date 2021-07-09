@@ -1,0 +1,91 @@
+.onboarding3 {
+  ion-slides {
+    height: 100%;
+  }
+
+  .skip-button {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+
+    ion-img {
+      margin-bottom: 10em;
+    }
+  }
+
+  .slide {
+    position: absolute;
+    background-color: transparent;
+    background: transparent;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+
+    h2 {
+      margin-top: 2.8rem;
+    }
+
+    ion-img {
+      max-height: 50%;
+      max-width: 80%;
+      //   margin: 60px 0 40px;
+      margin: 0 auto;
+      pointer-events: none;
+    }
+
+    b {
+      font-weight: 500;
+    }
+
+    p {
+      padding: 0 40px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--ion-color-step-600, #60646b);
+    }
+
+    p b {
+      color: var(--ion-text-color, #000000);
+    }
+  }
+
+  .slide-button {
+    font-size: 17px;
+    line-height: 27.9px;
+  }
+
+  .slide-footer-toolbar {
+    --padding-start: 16px;
+    --padding-end: 16px;
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    bottom: 11em;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 24px !important;
+    height: 8px !important;
+    border-radius: 4px;
+    background: #6166f3 !important;
+  }
+
+  .swiper-pagination-bullet {
+    height: 8px;
+    width: 8px;
+    background: #d0d1fb;
+  }
+
+  .swiper-container-horizontal
+    > .swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 2px;
+  }
+}
